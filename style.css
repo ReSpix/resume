@@ -44,7 +44,7 @@ p {
     padding: 50px;
 }
 
-.row {
+.header {
     display: flex;
     justify-content: space-between;
 }
@@ -124,4 +124,21 @@ p span{
     height: 100px;
     width: 100px;
     margin: 30px;
+}
+
+@media (max-width: 769px) {
+    ul{
+        flex-direction: column;
+    }
+
+    ul li img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 426px) {
+    .header{
+        flex-direction: column;
+    }
 }
